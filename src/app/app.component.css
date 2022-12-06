@@ -1,0 +1,61 @@
+body{
+    padding-top: 50px;
+    padding-left: 450px;
+}
+.container{
+    width: 400px;
+    height: 250px;
+    border: 2px solid black;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: pink;
+}
+
+input{
+    margin: 10px;
+}
+
+button{
+    margin-left:135px;
+    width: 100px;
+    background-color:rgb(43, 144, 226);
+    color: black;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: orange;
+}
+.nu{
+    margin-left: 60px;
+}
+.cost{
+    margin-left: 75px;
+}
+.total{
+    margin-left: 100px;
+}
+span{
+    margin-left: 30px;
+    font-weight: bolder;
+}
+
+table,th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table{
+    width: 500px;
+    height: 100px;
+
+}
+
+.tb{
+    padding-left: 500px;
+}
+
+.special{
+    border: 2px solid blue;
+}
+.divi{
+    margin-left: 500px;
+}

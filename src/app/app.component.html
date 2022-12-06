@@ -1,0 +1,77 @@
+<body>
+  <div class="container">
+    <span>Number of Litre:</span><input class="nu" [(ngModel)]="firstInput"><br>
+    <span>Cost per Litre:</span><input class="cost" [(ngModel)]="secondInput"><br>
+    <div><button class="btn"(click)="onClickTotal($event)">Calculate</button></div>
+    <span>Total Cost:</span><label for=""><b>{{total}}</b></label>
+  </div>
+</body>
+<br><br><br>
+<div class="divi"><button class="btn"(click)="onAdd($event)">Add Details</button></div>
+<br><br>
+
+<div class="tb">
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>No of Litres</th>
+      <th>Cost per Litre</th>
+      <th>Total</th>
+    </tr>
+    <tr *ngFor="let item of addDetails;index as i">
+      <td>{{i+1}}</td>
+      <td>{{item.NoOfLitres}}</td>
+      <td>{{item.CostPerLitre}}</td>
+      <td>{{item.Total}}</td>
+    </tr>
+  </table>
+</div>
+
+
+<!-- <h1>{{stringbing}}</h1> -->
+<!-- <h1>{{d}}</h1>
+<h1>{{aj}}</h1> -->
+<!-- 
+
+<h3 *ngFor="let item of info">
+  {{item.name}},{{item.Email}},{{item.age}}
+</h3>
+
+<h3 *ngFor="let n of nums;index as i">Paragraph {{n}} {{i}}</h3>
+
+<table border="2px">
+  <tr *ngFor="let t of table;index as p">
+    <td>
+      {{p+1}} {{t}}
+    </td>
+  </tr>
+</table>
+<br><br>
+
+<table border="2px">
+  <tr *ngFor="let v of veg">
+    <td>
+      {{v.name}} {{v.cost}}
+    </td>
+  </tr>
+</table>
+<br><br>
+
+<table border="2px">
+  <tr>
+    <td>Name</td>
+    <td>Index</td>
+    <td>First</td>
+    <td>Last</td>
+    <td>Even</td>
+    <td>Odd</td>
+  </tr>
+  <tr *ngFor="let m of mobile;index as i;first as f;last as l;even as e;odd as o">
+    <td>{{m}}</td>
+    <td>{{i+1}}</td>
+    <td>{{f}}</td>
+    <td>{{l}}</td>
+    <td>{{e}}</td>
+    <td>{{o}}</td>
+  </tr>
+</table> -->
